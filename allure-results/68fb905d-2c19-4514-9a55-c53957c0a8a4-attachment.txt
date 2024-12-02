@@ -1,0 +1,4 @@
+200
+{'id': 9223372036854384180, 'category': {'id': 0, 'name': 'string'}, 'name': 'doggie', 'photoUrls': ['string'], 'tags': [{'id': 0, 'name': 'string'}], 'status': 'available'}
+Category Details: {'id': 0, 'name': 'string'}
+Tags: 0

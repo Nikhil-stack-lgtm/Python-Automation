@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.12.3 on win32)" generated="2024-11-22T17:51:30.034873" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="C:\Users\Admin\PycharmProjects\cloudinspotProject\Jira\test.robot">
+<test id="s1-t1" name="Connect To JIRA" line="13">
+<kw name="Connect To Jira">
+<msg time="2024-11-22T17:51:30.137844" level="FAIL">No keyword with name 'Connect To Jira' found.</msg>
+<var>${session}</var>
+<arg>${URL}</arg>
+<arg>${USER}</arg>
+<arg>${PASS}</arg>
+<status status="FAIL" start="2024-11-22T17:51:30.137844" elapsed="0.000000">No keyword with name 'Connect To Jira' found.</status>
+</kw>
+<kw name="Projects">
+<var>${projects}</var>
+<arg>${session}</arg>
+<status status="NOT RUN" start="2024-11-22T17:51:30.138842" elapsed="0.000000"/>
+</kw>
+<kw name="Log Dictionary" owner="Collections">
+<arg>${projects}</arg>
+<arg>WARN</arg>
+<doc>Logs the size and contents of the ``dictionary`` using given ``level``.</doc>
+<status status="NOT RUN" start="2024-11-22T17:51:30.138842" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-11-22T17:51:30.134844" elapsed="0.003998">No keyword with name 'Connect To Jira' found.</status>
+</test>
+<test id="s1-t2" name="Connect To JIRA And Skip SSL Check" line="18">
+<kw name="Evaluate" owner="BuiltIn">
+<arg>urllib3.disable_warnings()</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-11-22T17:51:30.139842" elapsed="0.049000"/>
+</kw>
+<kw name="Connect To Jira">
+<msg time="2024-11-22T17:51:30.190876" level="FAIL">No keyword with name 'Connect To Jira' found.</msg>
+<var>${session}</var>
+<arg>${URL}</arg>
+<arg>${USER}</arg>
+<arg>${PASS}</arg>
+<arg>verify_ssl=${False}</arg>
+<status status="FAIL" start="2024-11-22T17:51:30.189877" elapsed="0.000999">No keyword with name 'Connect To Jira' found.</status>
+</kw>
+<kw name="Projects">
+<var>${projects}</var>
+<arg>${session}</arg>
+<status status="NOT RUN" start="2024-11-22T17:51:30.190876" elapsed="0.000000"/>
+</kw>
+<kw name="Log Dictionary" owner="Collections">
+<arg>${projects}</arg>
+<arg>WARN</arg>
+<doc>Logs the size and contents of the ``dictionary`` using given ``level``.</doc>
+<status status="NOT RUN" start="2024-11-22T17:51:30.190876" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-11-22T17:51:30.139842" elapsed="0.051034">No keyword with name 'Connect To Jira' found.</status>
+</test>
+<test id="s1-t3" name="Add Comment to Issue" line="24">
+<kw name="Connect To Jira">
+<msg time="2024-11-22T17:51:30.192844" level="FAIL">No keyword with name 'Connect To Jira' found.</msg>
+<var>${session}</var>
+<arg>${URL}</arg>
+<arg>${USER}</arg>
+<arg>${PASS}</arg>
+<status status="FAIL" start="2024-11-22T17:51:30.192844" elapsed="0.000000">No keyword with name 'Connect To Jira' found.</status>
+</kw>
+<kw name="Issue Add Comment">
+<arg>${session}</arg>
+<arg>JIRAID-1234</arg>
+<arg>My long comment !</arg>
+<status status="NOT RUN" start="2024-11-22T17:51:30.193844" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-11-22T17:51:30.191842" elapsed="0.002002">No keyword with name 'Connect To Jira' found.</status>
+</test>
+<status status="FAIL" start="2024-11-22T17:51:30.035842" elapsed="0.159034"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="3" skip="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-11-22T17:51:30.107844" level="ERROR">Error in file 'C:\Users\Admin\PycharmProjects\cloudinspotProject\Jira\test.robot' on line 3: Importing library 'JIRALibrary' failed: ModuleNotFoundError: No module named 'pkg_resources'
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\cloudinspotProject\.venv\Lib\site-packages\JIRALibrary\__init__.py", line 8, in &lt;module&gt;
+    import pkg_resources
+PYTHONPATH:
+  C:\Users\Admin\PycharmProjects\cloudinspotProject\.venv\Scripts\robot.exe
+  C:\Users\Admin\AppData\Local\Programs\Python\Python312\python312.zip
+  C:\Users\Admin\AppData\Local\Programs\Python\Python312\DLLs
+  C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib
+  C:\Users\Admin\AppData\Local\Programs\Python\Python312
+  C:\Users\Admin\PycharmProjects\cloudinspotProject\.venv
+  C:\Users\Admin\PycharmProjects\cloudinspotProject\.venv\Lib\site-packages</msg>
+</errors>
+</robot>

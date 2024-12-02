@@ -1,0 +1,4 @@
+Browser opened successfully.
+Config loaded: {}
+Error during test execution: No option 'qaurl' in section: 'DEFAULT'
+Browser closed.

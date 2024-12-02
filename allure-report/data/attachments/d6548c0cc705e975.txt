@@ -1,0 +1,2 @@
+Attempting to read config file at: C:\Users\Admin\PycharmProjects\cloudinspotProject\seleniumbasicspytest\config.ini
+Config sections found: ['detail']

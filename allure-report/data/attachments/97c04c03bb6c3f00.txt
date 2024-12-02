@@ -1,0 +1,4 @@
+Attempting to read config file at: C:\Users\Admin\PycharmProjects\cloudinspotProject\seleniumbasicspytest\config.ini
+Config sections found: ['detail', 'api']
+200
+{'message': 'Check your mail for details'}
